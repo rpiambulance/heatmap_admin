@@ -40,14 +40,6 @@ function changeGradient() {
     heatmap.set('gradient', heatmap.get('gradient') ? null : gradient);
 }
 
-function changeRadius() {
-    heatmap.set('radius', heatmap.get('radius') ? 20 : 20);
-}
-
-function changeOpacity() {
-    heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
-}
-
 function getPoints(callback) {
 
     $.getJSON("js/points.json", function(data) {
