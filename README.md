@@ -18,7 +18,8 @@ The second way is to search using customary address input. This particular packa
 
 all work just as well. Zip codes can be used in place of city and state, and, usually, states can be left off entirely—so long as Google knows your current location.
 
----
+## Bulk input
+
 For both location input methods, a numerical selector is available to bulk-add events at single locations.
 
 ---
