@@ -22,6 +22,9 @@ all work just as well. Zip codes can be used in place of city and state, and, us
 
 For both location input methods, a numerical selector is available to bulk-add events at single locations.
 
+## Installation
+Simply drop all the contained files in the web location of your choosing. Check out `/js/map.js` and `/add/js/info.js`, and add your Google Maps API key and other info in the appropriate locations.
+
 ---
 ## Credits
 This project was created for RPI Ambulance and is available under the MIT License (and the licenses of any other packages used).
