@@ -1,0 +1,14 @@
+{
+  "locations": [
+    {
+      "name": "Academy Hall",
+      "lat": 42.727491,
+      "lng": -73.678608
+    },
+    {
+      "name": "Admissions",
+      "lat": 42.730727,
+      "lng": -73.675544
+    }
+  ]
+}

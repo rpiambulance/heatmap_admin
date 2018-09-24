@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<title>Add a call</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/chosen.min.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	<div id="success">Adding <span class="countnum"></span> call<span class="plural"></span> was successful for <span class="success_location"></span><span class="floatright">x</span></div>
+	<div id="failed">Adding <span class="countnum"></span> call<span class="plural"></span> was unsuccessful for <span class="fail_location"></span><span class="floatright">x</span></div>
+	<div id="lookgood">Look good? Hit the submit button next to the lat/lng input boxes! If not, enter another address to be geoencoded.<span class="floatright">x</span></div>
+	<h1>Add a call:</h1>
+	<select id="location" data-placeholder="Choose a location..." class="chosen-select" style="width:350px;">
+		<option value=""></option>
+	</select>
+	<br><br>Count: <input type="number" name="count" id="count" value="1">
+	<button id="submit" type="submit">Submit</button>
+	<h2>or</h2>
+	<input id="address_input" type="text" name="address" value="" placeholder="Enter an address..."></input>
+	<button id="submit_address" type="submit">Geoencode</button>
+	<div id="iframe_map"></div>
+	<div class="latlnginput">
+		<input class="latlngfield" id="lat" type="text" name="lat" value="" placeholder="Enter latitude">
+		<input class="latlngfield" id="lng" type="text" name="lng" value="" placeholder="Enter longitude">
+		<br><br>
+		Count: <input type="number" name="address_count" id="address_count" value="1">
+		<button type="submit" id="submit_latlng">Submit</button>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/run.js"></script>
+	<script src="js/info.js"></script>
+	<script src="js/chosen.jquery.min.js" type="text/javascript"></script>
+	<script src="js/prism.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$.ajaxSetup({ cache: false });
+	});
+	var config = {
+		'.chosen-select'           : {search_contains:"true"},
+		'.chosen-select-deselect'  : {allow_single_deselect:true},
+		'.chosen-select-no-single' : {disable_search_threshold:10},
+		'.chosen-select-no-resIults': {no_results_text:'Oops, nothing found!'},
+		'.chosen-select-width'     : {width:"95%"}
+	}
+	for (var selector in config) {
+		$(selector).chosen(config[selector]);
+	}
+	</script>
+</body>
+</html>

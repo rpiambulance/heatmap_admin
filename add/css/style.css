@@ -1,0 +1,68 @@
+* {
+	font-family: sans-serif;
+}
+
+#datepicker {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#success, #failed, #lookgood {
+	display: none;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#success {
+	background-color: green;
+}
+
+#failed {
+	background-color: red;
+}
+
+#lookgood {
+	background-color: #4286f4;
+	font-weight: bold;
+}
+
+.success_location {
+	font-weight: bold;
+}
+
+.floatright {
+	cursor: pointer;
+	font-weight: bold;
+	padding: 2px;
+	float: right;
+	height: 20px;
+	width: 20px;
+	background-color: rgba(0,0,0,.1);
+	transition: background-color .2s;
+	border-radius: 4px;
+}
+
+.floatright:hover {
+	background-color: rgba(0,0,0,.2);
+	transition: background-color .2s;
+}
+
+#address_input {
+	width: 300px;
+}
+
+#iframe_map iframe{
+	margin-top: 15px;
+	width: 500px;
+	height: 250px;
+}
+
+.latlnginput {
+	margin-top: 10px;
+}
+
+.latlngfield {
+	margin-right: 5px;
+}

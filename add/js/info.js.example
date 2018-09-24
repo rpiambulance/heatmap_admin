@@ -1,0 +1,5 @@
+module.exports = {
+  key: "longapikeystringhere",
+  key2: "anotherlongapikeystringhere",
+  uploadsite: "http://webaddress.here/upload"
+}
