@@ -64,7 +64,7 @@ $("#submit_address").click(function() {
 		lat = lat.toPrecision(6);
 		lng = lng.toPrecision(6);
 		console.log(lat + " " + lng);
-		var iframe = "<iframe src='//www.google.com/maps/embed/v1/place?q=" + lat + "," + lng + "&zoom=17&key=" + info.key2 + "'></iframe>";
+		var iframe = "<iframe src='https://www.google.com/maps/embed/v1/place?q=" + lat + "," + lng + "&zoom=17&key=" + info.key2 + "'></iframe>";
 		$("#iframe_map").empty();
 		$("#iframe_map").append(iframe);
 		$("#lat").val(lat);
